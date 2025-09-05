@@ -110,26 +110,28 @@ This subsystem allows the LLM to break out of pure generation and take actions.
 4. Key Features & Capabilities
    
 ```python
-Feature	Description	Benefit
-Streaming Generation	Code is output token-by-token in real-time.	Provides immediate feedback and can be stopped early.
-Feedback-Driven Learning	User ratings (0-1) directly influence future code retrieval and generation.	The system gets smarter and more personalized over time.
-Multi-Language Support	Generate code for Python, JS/TS, Java, React, Tailwind, Vite, NestJS.	Broad utility across the software stack.
-Context-Awareness	Incorporates project files and past generations into the prompt.	Generates code that fits the existing codebase style and structure.
-Self-Optimizing	Automatically tunes its own retrieval and generation parameters.	Maintains peak performance without manual intervention.
-Tool Usage	The AI can execute code, lint code, and search its knowledge base.	Results in more accurate, tested, and practical code outputs.
-Colab Integration	Auto-detects Google Colab and sets up a public ngrok tunnel.	Makes experimentation and demoing incredibly easy.
-6. Supported Languages & Tools
-Language	Extension	Linter	Execution Environment	Categories
-Python	.py	flake8	python:3.9-slim	Web, Data, ML
-JavaScript	.js	eslint	node:18-slim	Web, Server, Frontend
-TypeScript	.ts	eslint	node:18-slim	Web, Server, Frontend
-Java	.java	checkstyle	openjdk:17-jdk-slim	Backend, Android
-React	.jsx	eslint	node:18-slim	Frontend, Web
-Tailwind	.jsx	N/A	node:18-slim	Frontend, CSS
-Vite	.js	eslint	node:18-slim	Frontend, Build
-NestJS	.ts	eslint	node:18-slim	Backend, Server
+Feature	                                   Description	                                                                              Benefit
+Streaming Generation	          Code is output token-by-token in real-time.	                                    Provides immediate feedback and can be stopped early.
+Feedback-Driven Learning	    User ratings (0-1) directly influence future code retrieval and generation.	The system gets smarter and more personalized over time.
+Multi-Language Support	          Generate code for Python, JS/TS, Java, React, Tailwind, Vite, NestJS.	      Broad utility across the software stack.
+Context-Awareness	                Incorporates project files and past generations into the prompt.	            Generates code that fits the existing codebase style and structure.
+Self-Optimizing	                Automatically tunes its own retrieval and generation parameters.	            Maintains peak performance without manual intervention.
+Tool Usage	                      The AI can execute code, lint code, and search its knowledge base.	            Results in more accurate, tested, and practical code outputs.
+Colab Integration	                Auto-detects Google Colab and sets up a public ngrok tunnel.	Makes             experimentation and demoing incredibly easy.
 ```
-7. API Overview
+5. Supported Languages & Tools
+```python 
+Language	 Extension	    Linter	      Execution Environment  	       Categories
+Python	  .py	          flake8	         python:3.9-slim	      Web, Data, ML
+JavaScript	  .js	          eslint	         node:18-slim	            Web, Server, Frontend
+TypeScript	  .ts	          eslint	         node:18-slim	            Web, Server, Frontend
+Java	        .java	    checkstyle	   openjdk:17-jdk-slim	      Backend, Android
+React	        .jsx	    eslint	         node:18-slim	            Frontend, Web
+Tailwind	  .jsx	      N/A	         node:18-slim	            Frontend, CSS
+Vite	        .js	          eslint	         node:18-slim	            Frontend, Build
+NestJS	  .ts	          eslint	         node:18-slim	            Backend, Server
+```
+6. API Overview
 
 The system exposes a RESTful API via FastAPI with automatic Swagger documentation at /docs.
 
