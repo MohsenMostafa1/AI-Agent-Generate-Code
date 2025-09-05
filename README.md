@@ -117,7 +117,7 @@ Multi-Language Support	          Generate code for Python, JS/TS, Java, React, T
 Context-Awareness	                Incorporates project files and past generations into the prompt.	            Generates code that fits the existing codebase style and structure.
 Self-Optimizing	                Automatically tunes its own retrieval and generation parameters.	            Maintains peak performance without manual intervention.
 Tool Usage	                      The AI can execute code, lint code, and search its knowledge base.	            Results in more accurate, tested, and practical code outputs.
-Colab Integration	                Auto-detects Google Colab and sets up a public ngrok tunnel.	Makes             experimentation and demoing incredibly easy.
+Colab Integration	                Auto-detects Google Colab and sets up a public ngrok tunnel.	                  Makesexperimentation and demoing incredibly easy.
 ```
 5. Supported Languages & Tools
 ```python 
